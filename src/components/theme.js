@@ -38,7 +38,7 @@ const space = {
 }
 
 const fonts = {
-  sans: `'TT Norms',
+  sans: `'Barlow',
          -apple-system, BlinkMacSystemFont,
          'avenir next', avenir,
          'helvetica neue', helvetica,
@@ -46,15 +46,12 @@ const fonts = {
          roboto, noto,
          'segoe ui', arial,
          sans-serif;`,
-  serif: `freight-text-pro,
-          georgia,
-          times,
-          serif;`,
-  display: `freight-display-pro,
-          georgia,
-          times,
-          serif;`
 }
+
+const fontWeights = [
+  300,
+  500,
+]
 
 const fontSizes = [
   '.75rem',
@@ -115,18 +112,13 @@ const colors = {
   G90:  '#003d21',
   G100: '#00331d',
 
-  // Blue
-  B5:   '#f2f6ff',
-  B10:  '#bad0fc',
-  B20:  '#84aaf6',
-  B30:  '#5488ee',
-  B40:  '#2e6ae2',
-  B50:  '#1252d3',
-  B60:  '#003fbe',
-  B70:  '#0037a4',
-  B80:  '#002c85',
-  B90:  '#002061',
-  B100: '#00143d',
+  // Blues
+  LB: '#3E92CC',
+  NB: '#183E59',
+  DB: '#050F16',
+  // Lights
+  OW: '#EAF2F7',
+  DW: '#D4D8DB',
 }
 
 // borders
@@ -176,7 +168,6 @@ const transitionDelays = {
 
 const headings = {
   800: {
-    fontFamily: fonts.display,
     fontSize: `${fontSizes[7]}`,
     fontWeight: 700,
     letterSpacing: letterSpacing.tight,
@@ -284,7 +275,8 @@ const theme = {
   timingFunctions,
   transitionDelays,
   headings,
-  buttons
+  buttons,
+  fontWeights
 }
 
 export default theme

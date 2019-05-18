@@ -4,7 +4,7 @@ import { Link as GatsbyLink } from 'gatsby'
 import Text from '../text'
 
 const StyledLink = styled(Text)`
-  background-image: linear-gradient(${props => props.theme.colors.G40}, ${props => props.theme.colors.G40});
+  background-image: linear-gradient(${props => props.theme.colors.LB}, ${props => props.theme.colors.LB});
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 100% .125em;
@@ -17,7 +17,7 @@ const StyledLink = styled(Text)`
   transition-timing-function: ${props => props.theme.timingFunctions.easeOut};
 
   &:hover, &:focus {
-    background-image: linear-gradient(${props => props.theme.colors.G30}, ${props => props.theme.colors.G30});
+    background-image: linear-gradient(${props => props.theme.colors.LB}, ${props => props.theme.colors.LB});
     background-size: 100% .5em;
   }
 `
