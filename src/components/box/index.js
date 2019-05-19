@@ -8,7 +8,8 @@ import {
   boxShadow,
   borderRadius,
   display,
-  zIndex
+  zIndex,
+  maxWidth
 } from 'styled-system'
 
 const Box = styled.div`
@@ -21,6 +22,7 @@ const Box = styled.div`
   ${borderRadius}
   ${display}
   ${zIndex}
+  ${maxWidth}
 `
 
 export default Box

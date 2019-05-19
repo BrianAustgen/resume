@@ -7,6 +7,8 @@ import { Normalize } from 'styled-normalize'
 import theme from './theme'
 import GlobalStyle from './global'
 import Header from './header'
+import Box from '../components/box'
+import Container from '../components/container'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -26,9 +28,14 @@ const Layout = ({ children }) => (
           <GlobalStyle />
           <Header siteTitle={data.site.siteMetadata.title} />
           {children}
-          <footer>
-            © {new Date().getFullYear()}
-          </footer>
+          <Box backgroundColor="OW" as="section" my={['major.4']}>
+            <Container>
+              <footer>
+                © {new Date().getFullYear()}
+              </footer>
+            </Container>
+          </Box>
+
         </div>
       </ThemeProvider>
     )}
