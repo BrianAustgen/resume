@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
           <GlobalStyle />
           <Header siteTitle={data.site.siteMetadata.title} />
           {children}
-          <Box backgroundColor="OW" as="section" my={['major.4']}>
+          <Box m="auto" minHeight={[6]} backgroundColor="OW" as="section" my={['major.4']}>
             <Container>
               <footer>
                 © {new Date().getFullYear()}

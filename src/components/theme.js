@@ -16,6 +16,16 @@ const maxWidths = [
   '100em'
 ]
 
+const minHeights = [
+  '0px',
+  '8px',
+  '16px',
+  '32px',
+  '64px',
+  '128px',
+  '256px'
+]
+
 const space = {
   major: [
     0,
@@ -276,7 +286,8 @@ const theme = {
   transitionDelays,
   headings,
   buttons,
-  fontWeights
+  fontWeights,
+  minHeights
 }
 
 export default theme
