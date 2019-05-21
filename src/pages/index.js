@@ -14,6 +14,7 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`Brian Austgen`, `portfolio`, `resume`]} />
     <Box as="section" my={['major.4']}>
       <Container>
+      // Start Bio
         <Box m="auto" maxWidth={[0]} as="section" my={['major.4']}>
           <Heading as="h2" variant="700">
             Bio
@@ -31,6 +32,7 @@ const IndexPage = () => (
             If you’re looking to integrate the latest technology into your marketing mix, I’d love to hear from you.
           </Text>
         </Box>
+        // End Bio
       </Container>
     </Box>
   </Layout>

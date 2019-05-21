@@ -2,7 +2,6 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Container from "./container"
-import Button from "./button"
 import NavLink from "./NavLink"
 import Logo from "./logo"
 import Box from "./box"
@@ -14,11 +13,13 @@ const Header = ({ siteTitle }) => {
       <Flex alignItems="center" justifyContent="space-between">
         <Box>
           <Logo pr={["major.3"]} to="/">Brian Austgen</Logo>
+          <NavLink fontWeight="1" to="/portfolio/">Portfolio</NavLink>
         </Box>
         <Box my={['major.4']}>
-          <NavLink to="/portfolio/">Portfolio</NavLink>
-          <Button primary>I am a button</Button>
         </Box>
+          <NavLink href="mailto:brianaustgen@gmail.com" fontWeight="0">
+          brianaustgen@gmail.com
+          </NavLink>
       </Flex>
     </Container>
   )
