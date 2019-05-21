@@ -9,6 +9,8 @@ import SEO from "../components/seo"
 import Heading from "../components/heading"
 import Text from "../components/text"
 import {Grid, GridItem} from "../components/grid"
+import Button from "../components/button.js"
+import Flex from "../components/flex"
 
 const SecondPage = ({data}) => (
   <Layout>
@@ -23,22 +25,40 @@ const SecondPage = ({data}) => (
     </Box>
     {/*End Portfolio Introduction*/}
     {/*Start Unlimited Summer*/}
-    <Box m="auto" maxWidth={[2]} as="section" my={['major.4']}>
+    <Box borderLeft="3" m="auto" maxWidth={[2]} as="section" my={['major.4']}>
       <Container>
-        <Heading as="h2" color="NB" variant="600">
-          Unlimited Summer (03/2019 - 04/2019)
-        </Heading>
+        <Flex alignItems="center" justifyContent="space-between">
+          <Box>
+          <Heading as="h2" color="NB" variant="6001">
+            Unlimited Summer
+          </Heading>
+          </Box>
+          <Box>
+          <Heading as="h2" color="NB" variant="6001">
+            (03/2019 - 04/2019)
+          </Heading>
+          </Box>
+        </Flex>
         <Img fluid={data.unlimitedBanner.childImageSharp.fluid}/>
-        <Grid mt={['64px', '64px', '256px']}>
-          <GridItem gridColumn={['1 / -1', '2 / -2', '7 / -1', '7 / -2']} order={['1', '1', '2']} alignSelf={'flex-end'} px={'major.1'}>
+        <Grid mt={['32px', '32px', '64px']}>
+          <GridItem gridColumn={['1 / -1', '2 / -2', '7 / -1', '7 / -2']} order={['1', '1', '2']} alignSelf={'flex-start'} px={'major.1'}>
             <Text as="p">
-              First Grid Item
+              Cost: $X,xxx
+            </Text>
+            <Text as="p">
+              Leads: X,xxx
+            </Text>
+            <Text as="p">
+              Revenue of Goal: 189%
             </Text>
           </GridItem>
-          <GridItem gridColumn={['1 / -1', '2 / -2', '1 / 6', '2 / 6']} order={['2', '2', '1']} alignSelf={'flex-end'} pb={'major.1'}>
+          <GridItem gridColumn={['1 / -1', '2 / -2', '1 / 6', '2 / 6']} order={['2', '2', '1']} alignSelf={'flex-start'} pb={'major.1'}>
             <Text as="p">
-              Second Grid Item
+              I created this campaign to create more interest in the off-season and maintain a high average sale price. We were able to accomplish both.
             </Text>
+            <Button my="0" as="a" href="getunbound.org">
+              View Landing Pages
+            </Button>
           </GridItem>
         </Grid>
       </Container>

@@ -5,7 +5,8 @@ import {
   gridArea,
   alignSelf,
   justifySelf,
-  order
+  order,
+  minHeight
 } from 'styled-system'
 
 import Box from '../box'
@@ -17,6 +18,7 @@ const GridItem = styled(Box)`
   ${alignSelf}
   ${justifySelf}
   ${order}
+  ${minHeight}
 `
 
 export default GridItem
