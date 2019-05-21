@@ -179,44 +179,44 @@ const transitionDelays = {
 const headings = {
   800: {
     fontSize: `${fontSizes[7]}`,
-    fontWeight: 700,
+    fontWeight: 400,
     letterSpacing: letterSpacing.tight,
   },
   700: {
     fontSize: `${fontSizes[6]}`,
-    fontWeight: 700,
+    fontWeight: 400,
     letterSpacing: letterSpacing.tight,
   },
   600: {
     fontSize: `${fontSizes[5]}`,
-    fontWeight: 700,
+    fontWeight: 400,
     letterSpacing: letterSpacing.tight,
   },
   500: {
     fontSize: `${fontSizes[4]}`,
-    fontWeight: 700,
+    fontWeight: 400,
     letterSpacing: letterSpacing.tight,
   },
   400: {
     fontSize: `${fontSizes[3]}`,
-    fontWeight: 700,
+    fontWeight: 400,
     letterSpacing: letterSpacing.tight,
   },
   300: {
     fontSize: `${fontSizes[2]}`,
-    fontWeight: 700,
+    fontWeight: 400,
     letterSpacing: letterSpacing.tight,
   },
   200: {
     fontSize: `${fontSizes[1]}`,
-    fontWeight: 700,
+    fontWeight: 400,
     letterSpacing: letterSpacing.loose,
     textTransform: 'uppercase'
   },
   100: {
     color: colors.N60,
     fontSize: `${fontSizes[0]}`,
-    fontWeight: 700,
+    fontWeight: 400,
     letterSpacing: letterSpacing.loose,
     textTransform: 'uppercase'
   }
