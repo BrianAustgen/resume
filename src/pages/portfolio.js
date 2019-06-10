@@ -16,7 +16,7 @@ const SecondPage = ({data}) => (
   <Layout>
     <SEO title="Portfolio"/>
     {/*Start Portfolio Introduction*/}
-    <Box as="section" my={['major.4']}>
+    <Box as="section" maxWidth={[2]} mx="auto" mb={['major.3']} mt={['major.5']}>
       <Container>
         <Heading as="h1" variant="700">
           Portfolio
@@ -34,7 +34,7 @@ const SecondPage = ({data}) => (
           </Heading>
           </Box>
           <Box>
-          <Heading as="h2" color="NB" variant="6001">
+          <Heading as="h4" color="DB" variant="3001">
             (03/2019 - 04/2019)
           </Heading>
           </Box>
@@ -43,20 +43,24 @@ const SecondPage = ({data}) => (
         <Grid mt={['32px', '32px', '64px']}>
           <GridItem gridColumn={['1 / -1', '2 / -2', '7 / -1', '7 / -2']} order={['1', '1', '2']} alignSelf={'flex-start'} px={'major.1'}>
             <Text as="p">
-              Cost: $X,xxx
+              Impressions: 273,040
             </Text>
             <Text as="p">
-              Leads: X,xxx
+              Leads: 675+
             </Text>
             <Text as="p">
               Revenue of Goal: 189%
+            </Text>
+            <Text as="p">
+              Conversion Rate (landing page): 18.65%
             </Text>
           </GridItem>
           <GridItem gridColumn={['1 / -1', '2 / -2', '1 / 6', '2 / 6']} order={['2', '2', '1']} alignSelf={'flex-start'} pb={'major.1'}>
             <Text as="p">
               I created this campaign to create more interest in the off-season and maintain a high average sale price. We were able to accomplish both.
             </Text>
-            <Button my="0" as="a" href="getunbound.org">
+            {/*TODO add href for button*/}
+            <Button my="0" as="a" href="https://getunbound.org" target="_blank">
               View Landing Pages
             </Button>
           </GridItem>
@@ -64,6 +68,45 @@ const SecondPage = ({data}) => (
       </Container>
     </Box>
     {/*End Unlimited Summer*/}
+    {/*Start Opportunity Cost Video*/}
+    <Box borderLeft="4" m="auto" maxWidth={[2]} as="section" my={['major.4']}>
+      <Container>
+        <Flex alignItems="center" justifyContent="space-between">
+          <Box>
+          <Heading as="h2" color="NB" variant="6001">
+            Opportunity Cost of College
+          </Heading>
+          </Box>
+          <Box>
+          <Heading as="h4" color="DB" variant="3001">
+            (02/2017 - Present)
+          </Heading>
+          </Box>
+        </Flex>
+        <Img fluid={data.unlimitedBanner.childImageSharp.fluid}/>
+        <Grid>
+          <GridItem borderLeft="1" gridColumn={['1 / -1', '2 / -2', '7 / -1', '5 / 6']} order={['1', '1', '2']} alignSelf={'flex-start'} px={'major.1'}>
+            <Text as="p">
+              Views: 262,800
+            </Text>
+          </GridItem>
+          <GridItem borderLeft="1" gridColumn={['1 / -1', '2 / -2', '7 / -1', '7 / 8']} order={['2', '2', '3']} alignSelf={'flex-start'} px={'major.1'}>
+            <Text as="p">
+              Engagements: 2,500+
+            </Text>
+          </GridItem>
+          <GridItem gridColumn={['1 / -1', '2 / -2', '1 / 6', '1 / 5']} order={['3', '3', '1']} alignSelf={'flex-start'} pb={'major.1'}>
+            <Text as="p">
+               Rank #1 in “Opportunity Cost of College” video search on Google and Bing
+            </Text>
+            <Button my="0" target="_blank" href="https://www.youtube.com/watch?v=nN55-2f-I4s&pbjreload=10">
+              Watch Video
+            </Button>
+          </GridItem>
+        </Grid>
+      </Container>
+    </Box>
+    {/*End Opportunity Cost Video*/}
   </Layout>
 )
 

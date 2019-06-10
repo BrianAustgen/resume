@@ -12,7 +12,7 @@ import Text from '../components/text'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`Brian Austgen`, `portfolio`, `resume`]} />
-    <Box as="section" my={['major.4']}>
+    <Box as="section" mb={['major.3']} mt={['major.5']}>
       <Container>
       {/*Start Bio*/}
         <Box m="auto" maxWidth={[0]} as="section" my={['major.4']}>

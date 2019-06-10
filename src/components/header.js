@@ -6,22 +6,25 @@ import NavLink from "./NavLink"
 import Logo from "./logo"
 import Box from "./box"
 import Flex from "./flex"
+import Position from "./position"
 
 const Header = ({ siteTitle }) => {
   return (
-    <Container borderBottom={"1px solid #D4D8DB"} bg={'N0'} py={["major.2"]}>
-      <Flex alignItems="center" justifyContent="space-between">
-        <Box>
-          <Logo pr={["major.3"]} to="/">Brian Austgen</Logo>
-          <NavLink fontWeight="1" to="/portfolio/">Portfolio</NavLink>
-        </Box>
-        <Box my={['major.4']}>
-        </Box>
-          <NavLink href="mailto:brianaustgen@gmail.com" fontWeight="0">
-          brianaustgen@gmail.com
-          </NavLink>
-      </Flex>
-    </Container>
+    <Position position={'fixed'} top={'0'} width={'100%'} zIndex={'9'}>
+      <Container borderBottom={"1px solid #D4D8DB"} bg={'N0'} py={['minor.6']} >
+        <Flex alignItems="center" justifyContent="space-between">
+          <Box>
+            <Logo pr={["major.3"]} to="/">Brian Austgen</Logo>
+            <NavLink fontWeight="1" to="/portfolio/">Portfolio</NavLink>
+          </Box>
+          <Box>
+          </Box>
+            <NavLink href="mailto:brianaustgen@gmail.com" fontWeight="0">
+            brianaustgen@gmail.com
+            </NavLink>
+        </Flex>
+      </Container>
+    </Position>
   )
 }
 

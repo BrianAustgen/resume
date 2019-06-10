@@ -136,7 +136,8 @@ const borders = [
   `0`,
   `1px solid ${colors.N20}`,
   `2px solid ${colors.N20}`,
-  `3px solid ${colors.LB}`
+  `3px solid ${colors.LB}`,
+  `3px solid ${colors.NB}`
 ]
 
 // box shadows
@@ -211,6 +212,11 @@ const headings = {
   300: {
     fontSize: `${fontSizes[2]}`,
     fontWeight: 400,
+    letterSpacing: letterSpacing.tight,
+  },
+  3001: {
+    fontSize: `${fontSizes[2]}`,
+    fontWeight: 300,
     letterSpacing: letterSpacing.tight,
   },
   200: {
