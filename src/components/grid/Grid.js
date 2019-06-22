@@ -28,8 +28,7 @@ const Grid = styled(Box)`
 `
 
 Grid.defaultProps = {
-  gridTemplateColumns: 'repeat(12, 1fr)',
-  gridGap: 'major.3'
+  gridTemplateColumns: 'repeat(12, 1fr)'
 }
 
 export default Grid

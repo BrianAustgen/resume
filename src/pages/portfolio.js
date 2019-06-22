@@ -8,7 +8,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Heading from "../components/heading"
 import Text from "../components/text"
-import {Grid, GridItem} from "../components/grid"
 import Button from "../components/button.js"
 import Flex from "../components/flex"
 
@@ -39,32 +38,34 @@ const SecondPage = ({data}) => (
           </Heading>
           </Box>
         </Flex>
-        <Img fluid={data.unlimitedBanner.childImageSharp.fluid}/>
-        <Grid mt={['32px', '32px', '64px']}>
-          <GridItem gridColumn={['1 / -1', '2 / -2', '7 / -1', '7 / -2']} order={['1', '1', '2']} alignSelf={'flex-start'} px={'major.1'}>
-            <Text as="p">
-              Impressions: 273,040
-            </Text>
-            <Text as="p">
-              Leads: 675+
-            </Text>
-            <Text as="p">
-              Revenue of Goal: 189%
-            </Text>
-            <Text as="p">
-              Conversion Rate (landing page): 18.65%
-            </Text>
-          </GridItem>
-          <GridItem gridColumn={['1 / -1', '2 / -2', '1 / 6', '2 / 6']} order={['2', '2', '1']} alignSelf={'flex-start'} pb={'major.1'}>
-            <Text as="p">
-              I created this campaign to create more interest in the off-season and maintain a high average sale price. We were able to accomplish both.
-            </Text>
-            {/*TODO add href for button*/}
-            <Button my="0" as="a" href="https://getunbound.org" target="_blank">
-              View Landing Pages
-            </Button>
-          </GridItem>
-        </Grid>
+        <Box pt={['major.2']} >
+          <Img fluid={data.unlimitedBanner.childImageSharp.fluid}/>
+        </Box>
+        <Flex alignItems="center" justifyContent="space-between">
+          <Flex order={['1','1','2']} width="50%" flexDirection="column" flexWrap="wrap" borderLeft="1" pl={'major.2'}>
+          <Text as="p">
+            Impressions: 273,040
+          </Text>
+          <Text as="p">
+            Leads: 675+
+          </Text>
+          <Text as="p">
+            Revenue of Goal: 189%
+          </Text>
+          <Text as="p">
+            Conversion Rate (landing page): 18.65%
+          </Text>
+          </Flex>
+          <Flex order={['2','2','1']} width="50%" flexDirection="column" flexWrap="wrap">
+          <Text px={['minor.2']} as="p">
+            I created this campaign to create more interest in the off-season and maintain a high average sale price. We were able to accomplish both.
+          </Text>
+          {/*TODO add href for button*/}
+          <Button maxWidth="40%" as="a" href="https://getunbound.org" target="_blank">
+            View Landing Page
+          </Button>
+          </Flex>
+        </Flex>
       </Container>
     </Box>
     {/*End Unlimited Summer*/}
@@ -83,27 +84,27 @@ const SecondPage = ({data}) => (
           </Heading>
           </Box>
         </Flex>
-        <Img fluid={data.unlimitedBanner.childImageSharp.fluid}/>
-        <Grid>
-          <GridItem borderLeft="1" gridColumn={['1 / -1', '2 / -2', '7 / -1', '5 / 6']} order={['1', '1', '2']} alignSelf={'flex-start'} px={'major.1'}>
+        <Box pt={['major.2']}>
+          <Img fluid={data.opportunityCost.childImageSharp.fluid}/>
+        </Box>
+        <Flex alignItems="center" justifyContent="space-between">
+          <Flex order={['1','1','2']} width="50%" flexDirection="column" flexWrap="wrap" borderLeft="1" pl={'major.2'}>
             <Text as="p">
               Views: 262,800
             </Text>
-          </GridItem>
-          <GridItem borderLeft="1" gridColumn={['1 / -1', '2 / -2', '7 / -1', '7 / 8']} order={['2', '2', '3']} alignSelf={'flex-start'} px={'major.1'}>
             <Text as="p">
               Engagements: 2,500+
             </Text>
-          </GridItem>
-          <GridItem gridColumn={['1 / -1', '2 / -2', '1 / 6', '1 / 5']} order={['3', '3', '1']} alignSelf={'flex-start'} pb={'major.1'}>
-            <Text as="p">
+          </Flex>
+          <Flex order={['2','2','1']} width="50%" flexDirection="column" flexWrap="wrap">
+            <Text px={['minor.2']} as="p">
                Rank #1 in “Opportunity Cost of College” video search on Google and Bing
             </Text>
-            <Button my="0" target="_blank" href="https://www.youtube.com/watch?v=nN55-2f-I4s&pbjreload=10">
+            <Button maxWidth="40%" my="0" target="_blank" href="https://www.youtube.com/watch?v=nN55-2f-I4s&pbjreload=10">
               Watch Video
             </Button>
-          </GridItem>
-        </Grid>
+          </Flex>
+        </Flex>
       </Container>
     </Box>
     {/*End Opportunity Cost Video*/}
@@ -113,6 +114,13 @@ const SecondPage = ({data}) => (
 export const query = graphql`
   query {
     unlimitedBanner: file(relativePath: { eq: "unlimited_summer_banner.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    opportunityCost: file(relativePath: { eq: "opportunity_cost_of_college.png" }) {
       childImageSharp {
         fluid(maxWidth: 1600) {
           ...GatsbyImageSharpFluid

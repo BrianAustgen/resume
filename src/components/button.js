@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link as GatsbyLink } from 'gatsby'
+import { maxWidth } from 'styled-system'
 
 const StyledButton = styled.a`
   /* Adapt the colors based on primary prop */
@@ -14,6 +15,8 @@ const StyledButton = styled.a`
   border-radius: 3px;
   font-weight: ${props => props.theme.fontWeights[1]}
   text-decoration: none;
+  text-align: center;
+  ${maxWidth}
 `;
 
 const Button = ({ children, to, ...props }) => {

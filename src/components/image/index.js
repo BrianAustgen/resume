@@ -1,6 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import { space } from 'styled-system'
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized

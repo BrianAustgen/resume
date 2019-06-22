@@ -18,7 +18,6 @@ const Text = styled(Box)`
   ${fontWeight}
   ${fontStyle}
   ${letterSpacing}
-
   & + & {
     margin-top: ${props => props.theme.space.major[2]}px;
   }
