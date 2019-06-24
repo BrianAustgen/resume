@@ -2,13 +2,30 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link as GatsbyLink } from 'gatsby'
 import Text from '../text'
+import {
+  fontFamily,
+  fontSize,
+  lineHeight,
+  fontWeight,
+  fontStyle,
+  letterSpacing,
+  space,
+  color
+} from 'styled-system'
 
 const StyledLink = styled(Text)`
+  ${fontFamily}
+  ${fontSize}
+  ${lineHeight}
+  ${fontWeight}
+  ${fontStyle}
+  ${letterSpacing}
+  ${space}
+  ${color}
   background-image: linear-gradient(${props => props.theme.colors.LB}, ${props => props.theme.colors.LB});
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 100% .125em;
-  color: inherit;
   outline: none;
   position: relative;
   text-decoration: none;
@@ -43,7 +60,9 @@ const Link = ({ children, to, ...props }) => {
 }
 
 Link.defaultProps = {
-  fontSize: 'inherit'
+  fontSize: 'inherit',
+  marginTop: '0',
+  color: 'inherit'
 }
 
 export default Link

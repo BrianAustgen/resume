@@ -11,11 +11,11 @@ import Text from "../components/text"
 import Button from "../components/button.js"
 import Flex from "../components/flex"
 
-const SecondPage = ({data}) => (
+const Portfolio = ({data}) => (
   <Layout>
     <SEO title="Portfolio"/>
     {/*Start Portfolio Introduction*/}
-    <Box as="section" maxWidth={[2]} mx="auto" mb={['major.3']} mt={['major.5']}>
+    <Box as="section" maxWidth={[2]} mx="auto" mb={[6]} mt={[8]}>
       <Container>
         <Heading as="h1" variant="700">
           Portfolio
@@ -24,7 +24,7 @@ const SecondPage = ({data}) => (
     </Box>
     {/*End Portfolio Introduction*/}
     {/*Start Unlimited Summer*/}
-    <Box borderLeft="3" m="auto" maxWidth={[2]} as="section" my={['major.4']}>
+    <Box borderLeft="3" m="auto" maxWidth={[2]} as="section" my={[7]}>
       <Container>
         <Flex alignItems="center" justifyContent="space-between">
           <Box>
@@ -38,11 +38,11 @@ const SecondPage = ({data}) => (
           </Heading>
           </Box>
         </Flex>
-        <Box pt={['major.2']} >
+        <Box pt={[4]} >
           <Img fluid={data.unlimitedBanner.childImageSharp.fluid}/>
         </Box>
         <Flex alignItems="center" justifyContent="space-between">
-          <Flex order={['1','1','2']} width="50%" flexDirection="column" flexWrap="wrap" borderLeft="1" pl={'major.2'}>
+          <Flex order={['1','1','2']} width="50%" flexDirection="column" flexWrap="wrap" borderLeft="1" pl={4}>
           <Text as="p">
             Impressions: 273,040
           </Text>
@@ -57,8 +57,8 @@ const SecondPage = ({data}) => (
           </Text>
           </Flex>
           <Flex order={['2','2','1']} width="50%" flexDirection="column" flexWrap="wrap">
-          <Text px={['minor.2']} as="p">
-            I created this campaign to create more interest in the off-season and maintain a high average sale price. We were able to accomplish both.
+          <Text px={[2]} as="p">
+            I developed this campaign to create more interest in the off-season and maintain a high average sale price. We were able to accomplish both.
           </Text>
           {/*TODO add href for button*/}
           <Button maxWidth="40%" as="a" href="https://getunbound.org" target="_blank">
@@ -70,7 +70,7 @@ const SecondPage = ({data}) => (
     </Box>
     {/*End Unlimited Summer*/}
     {/*Start Opportunity Cost Video*/}
-    <Box borderLeft="4" m="auto" maxWidth={[2]} as="section" my={['major.4']}>
+    <Box borderLeft="4" m="auto" maxWidth={[2]} as="section" my={[7]}>
       <Container>
         <Flex alignItems="center" justifyContent="space-between">
           <Box>
@@ -84,11 +84,11 @@ const SecondPage = ({data}) => (
           </Heading>
           </Box>
         </Flex>
-        <Box pt={['major.2']}>
+        <Box pt={[4]}>
           <Img fluid={data.opportunityCost.childImageSharp.fluid}/>
         </Box>
         <Flex alignItems="center" justifyContent="space-between">
-          <Flex order={['1','1','2']} width="50%" flexDirection="column" flexWrap="wrap" borderLeft="1" pl={'major.2'}>
+          <Flex order={['1','1','2']} width="50%" flexDirection="column" flexWrap="wrap" borderLeft="1" pl={4}>
             <Text as="p">
               Views: 262,800
             </Text>
@@ -97,7 +97,7 @@ const SecondPage = ({data}) => (
             </Text>
           </Flex>
           <Flex order={['2','2','1']} width="50%" flexDirection="column" flexWrap="wrap">
-            <Text px={['minor.2']} as="p">
+            <Text px={[2]} as="p">
                Rank #1 in “Opportunity Cost of College” video search on Google and Bing
             </Text>
             <Button maxWidth="40%" my="0" target="_blank" href="https://www.youtube.com/watch?v=nN55-2f-I4s&pbjreload=10">
@@ -130,4 +130,4 @@ export const query = graphql`
   }
 `
 
-export default SecondPage
+export default Portfolio

@@ -9,6 +9,7 @@ import GlobalStyle from './global'
 import Header from './header'
 import Box from '../components/box'
 import Container from '../components/container'
+import Footer from '../components/footer'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,16 +29,18 @@ const Layout = ({ children }) => (
           <GlobalStyle />
           <Header siteTitle={data.site.siteMetadata.title} />
           {children}
-          <Box m="auto" minHeight={[6]} backgroundColor="OW" as="section" my={['major.4']}>
+          <Box minHeight={[7]} backgroundColor="NB" as="section" mt={[7]} mb={[0]}>
             <Container>
               <footer>
-                © {new Date().getFullYear()}
+                <Footer/>
               </footer>
             </Container>
           </Box>
 
         </div>
       </ThemeProvider>
+
+
     )}
   />
 )

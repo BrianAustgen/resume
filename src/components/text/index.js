@@ -5,7 +5,8 @@ import {
   lineHeight,
   fontWeight,
   fontStyle,
-  letterSpacing
+  letterSpacing,
+  space
 } from 'styled-system'
 
 import Box from '../box'
@@ -18,12 +19,11 @@ const Text = styled(Box)`
   ${fontWeight}
   ${fontStyle}
   ${letterSpacing}
-  & + & {
-    margin-top: ${props => props.theme.space.major[2]}px;
-  }
+  ${space}
 `
 
 Text.defaultProps = {
+  mt: '7',
   color: 'N50',
   fontSize: ['2', '3']
 }

@@ -23,29 +23,22 @@ const minHeights = [
   '32px',
   '64px',
   '128px',
-  '256px'
+  '256px',
+  '512px',
 ]
 
-const space = {
-  major: [
-    0,
-    8,
-    16,
-    32,
-    64,
-    128,
-    256
-  ],
-  minor: [
+const space = [
     0,
     4,
     8,
     12,
     16,
-    20,
-    24
-  ]
-}
+    24,
+    32,
+    64,
+    128,
+    256
+]
 
 const fonts = {
   sans: `'Barlow',
@@ -129,7 +122,10 @@ const colors = {
   // Lights
   OW: '#EAF2F7',
   DW: '#D4D8DB',
+  FG: '#d8d8d8'
 }
+
+colors.inherit = 'inherit';
 
 // borders
 const borders = [
@@ -181,17 +177,27 @@ const transitionDelays = {
 const headings = {
   800: {
     fontSize: `${fontSizes[7]}`,
-    fontWeight: 400,
+    fontWeight: 500,
+    letterSpacing: letterSpacing.tight,
+  },
+  8001: {
+    fontSize: `${fontSizes[7]}`,
+    fontWeight: 300,
     letterSpacing: letterSpacing.tight,
   },
   700: {
     fontSize: `${fontSizes[6]}`,
-    fontWeight: 400,
+    fontWeight: 500,
+    letterSpacing: letterSpacing.tight,
+  },
+  7001: {
+    fontSize: `${fontSizes[6]}`,
+    fontWeight: 300,
     letterSpacing: letterSpacing.tight,
   },
   600: {
     fontSize: `${fontSizes[5]}`,
-    fontWeight: 400,
+    fontWeight: 500,
     letterSpacing: letterSpacing.tight,
   },
   6001: {
@@ -201,17 +207,17 @@ const headings = {
   },
   500: {
     fontSize: `${fontSizes[4]}`,
-    fontWeight: 400,
+    fontWeight: 500,
     letterSpacing: letterSpacing.tight,
   },
   400: {
     fontSize: `${fontSizes[3]}`,
-    fontWeight: 400,
+    fontWeight: 500,
     letterSpacing: letterSpacing.tight,
   },
   300: {
     fontSize: `${fontSizes[2]}`,
-    fontWeight: 400,
+    fontWeight: 500,
     letterSpacing: letterSpacing.tight,
   },
   3001: {
@@ -221,14 +227,14 @@ const headings = {
   },
   200: {
     fontSize: `${fontSizes[1]}`,
-    fontWeight: 400,
+    fontWeight: 500,
     letterSpacing: letterSpacing.loose,
     textTransform: 'uppercase'
   },
   100: {
     color: colors.N60,
     fontSize: `${fontSizes[0]}`,
-    fontWeight: 400,
+    fontWeight: 500,
     letterSpacing: letterSpacing.loose,
     textTransform: 'uppercase'
   }
@@ -267,15 +273,15 @@ const buttons = {
   size: {
     small: {
       fontSize: `${fontSizes[0]}`,
-      padding: `${space.minor[3]}px ${space.minor[5]}px`
+      padding: `${space[3]}px ${space[5]}px`
     },
     medium: {
       fontSize: `${fontSizes[1]}`,
-      padding: `${space.major[2]}px ${space.major[3]}px`
+      padding: `${space[7]}px ${space[7]}px`
     },
     large: {
       fontSize: `${fontSizes[1]}`,
-      padding: `${space.minor[5]}px ${space.major[3]}px`
+      padding: `${space[5]}px ${space[7]}px`
     }
   }
 }
