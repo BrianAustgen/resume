@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link as GatsbyLink } from 'gatsby'
-import Text from '../text'
+import Box from '../box'
 import {
   fontFamily,
   fontSize,
@@ -13,7 +13,7 @@ import {
   color
 } from 'styled-system'
 
-const StyledLink = styled(Text)`
+const StyledLink = styled(Box)`
   ${fontFamily}
   ${fontSize}
   ${lineHeight}
@@ -62,7 +62,7 @@ const Link = ({ children, to, ...props }) => {
 Link.defaultProps = {
   fontSize: 'inherit',
   marginTop: '0',
-  color: 'inherit'
+  color: 'N50',
 }
 
 export default Link
