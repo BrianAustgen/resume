@@ -29,12 +29,8 @@ const Layout = ({ children }) => (
           <GlobalStyle />
           <Header siteTitle={data.site.siteMetadata.title} />
           {children}
-          <Box minHeight={[7]} backgroundColor="NB" as="section" mt={[7]} mb={[0]}>
-            <Container>
-              <footer>
-                <Footer/>
-              </footer>
-            </Container>
+          <Box>
+            <Footer/>
           </Box>
 
         </div>
