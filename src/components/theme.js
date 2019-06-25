@@ -210,6 +210,11 @@ const headings = {
     fontWeight: 500,
     letterSpacing: letterSpacing.tight,
   },
+  5001: {
+    fontSize: `${fontSizes[4]}`,
+    fontWeight: 300,
+    letterSpacing: letterSpacing.tight,
+  },
   400: {
     fontSize: `${fontSizes[3]}`,
     fontWeight: 500,

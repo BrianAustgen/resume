@@ -10,6 +10,7 @@ import Button from "../button.js"
 import Flex from "../flex"
 
 const Piece = ({content, data}) => (
+
   <Box borderLeft="3" m="auto" maxWidth={[2]} as="section" my={[7]}>
     <Container>
       <Flex alignItems="center" justifyContent="space-between">
@@ -25,36 +26,36 @@ const Piece = ({content, data}) => (
         </Box>
       </Flex>
       <Box pt={[4]} >
-        <Img fluid={data.unlimitedBanner.childImageSharp.fluid}/>
+        <Img fluid={data[content.image].childImageSharp.fluid}/>
       </Box>
-      <Flex alignItems="center" justifyContent="space-between">
+      <Flex alignItems="center" justifyContent="space-between" pt={6}>
         <Flex order={['1','1','2']} width="50%" flexDirection="column" flexWrap="wrap" borderLeft="1" pl={4}>
-        <Heading as="h5" color="LB" variant='6001' mt={4}>
-          Goal:
-        </Heading>
-        <Text mt={0} as="p">
-          {content.goal}
-        </Text>
-        <Heading as="h5" color="LB" variant='6001' mt={4}>
-          Solution:
-        </Heading>
-        <Text mt={0} as="p">
-          {content.solution}
-        </Text>
-        <Heading as="h5" color="LB" variant='6001' mt={4}>
-          Results:
-        </Heading>
-        <Text mt={0} as="p">
-          {content.results}
-        </Text>
+          <Heading as="h5" color="LB" variant='5001' mt={4}>
+            Goal:
+          </Heading>
+          <Text mt={0} fontSize={2} as="p">
+            {content.goal}
+          </Text>
+          <Heading as="h5" color="LB" variant='5001' mt={4}>
+            Solution:
+          </Heading>
+          <Text mt={0} fontSize={2} as="p">
+            {content.solution}
+          </Text>
+          <Heading as="h5" color="LB" variant='5001' mt={4}>
+            Results:
+          </Heading>
+          <Text mt={0} fontSize={2} as="p">
+            {content.results}
+          </Text>
         </Flex>
         <Flex order={['2','2','1']} width="50%" flexDirection="column" flexWrap="wrap">
         <Text px={[2]} as="p">
-          I developed this campaign to create more interest in the off-season and maintain a high average sale price. We were able to accomplish both.
+          {content.description}
         </Text>
         {/*TODO add href for button*/}
-        <Button maxWidth="40%" as="a" href="https://getunbound.org" target="_blank">
-          View Landing Page
+        <Button maxWidth="40%" as="a" href={content.link} target="_blank">
+          {content.cta}
         </Button>
         </Flex>
       </Flex>
@@ -82,6 +83,7 @@ export default ({content}) => (
         }
       }
     `}
+    //  eslint-disable-next-line
     render={content, data => (
       <Piece content={content} data={data}/>
     )}
