@@ -14,9 +14,14 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`Brian Austgen`, `portfolio`, `resume`]} />
     <Box as="section" mb={[6]} mt={[8]}>
       <Container>
+        <Box maxWidth={0}>
+          <Heading as="h1" variant="700">
+            MARKETER & WEB DEVELOPER
+          </Heading>
+        </Box>
       {/*Start Bio*/}
         <Box m="auto" maxWidth={[0]} as="section" my={[7]}>
-          <Heading as="h1" variant="700">
+          <Heading as="h2" variant="600">
             Bio
           </Heading>
           <Text as="p">
