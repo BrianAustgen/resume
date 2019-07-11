@@ -11,16 +11,16 @@ import List from '../list'
 
 const Item = ({content}) => (
 
-<Box>
+<Box py={[4]}>
   <Heading as='h3' variant='500'>
     {content.title}
   </Heading>
   <Heading as='h4' variant='company'>
     {content.company}
   </Heading>
-  <Text>
+  <Heading as='h5' variant='3001'>
     {content.dates}
-  </Text>
+  </Heading>
   <Text>
     {content.summary}
   </Text>

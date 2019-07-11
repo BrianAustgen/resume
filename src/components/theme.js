@@ -41,7 +41,8 @@ const space = [
     32,
     64,
     128,
-    256
+    256,
+    512
 ]
 
 const fonts = {
@@ -139,6 +140,7 @@ const borders = [
   `3px solid ${colors.LB}`,
   `3px solid ${colors.NB}`
 ]
+borders.skills = `2px solid ${colors.LB}`
 
 // box shadows
 const shadows = [

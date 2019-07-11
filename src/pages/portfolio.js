@@ -7,10 +7,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Heading from "../components/heading"
 import Text from "../components/text"
-import Button from "../components/button.js"
+import Button from "../components/button"
 import Flex from "../components/flex"
-import Piece from '../components/portfolio/piece.js'
-import portfolioPieces from '../portfolio/pieces.js'
+import Piece from '../components/portfolio/piece'
+import portfolioPieces from '../content/portfolio'
 
 const Portfolio = ({data}) => (
   <Layout>

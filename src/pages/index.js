@@ -11,19 +11,28 @@ import Text from '../components/text'
 import Button from '../components/button'
 import Flex from '../components/flex'
 import ResumeItem from '../components/resume/item'
+import List from '../components/list'
 
-const content = {
-  title: "Marketing Director, Consumer",
-  company: "Lumerit Education",
-  dates: "March 2019 - Present",
-  summary: "I do marketing Strategy I do marketing Strategy I do marketing Strategy I do marketing Strategy I do marketing Strategy I do marketing Strategy",
-  bulletPoints: ["Social Stategy", "Pricing Strategy", "Sales Enablement", "Measure ROI", "Develop Technology Roadmap"],
-}
+import ResumeExperience from '../content/experience'
+import Skills from '../content/skills'
 
+const marketingSkills = Skills.marketing.map(
+  (skill) =>
+  <List>
+    &bull; {skill}
+  </List>
+)
+const developmentSkills = Skills.marketing.map(
+  (skill) =>
+  <List>
+    &bull; {skill}
+  </List>
+)
 
 const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" keywords={[`Brian Austgen`, `portfolio`, `resume`]} />
+    {/* Start Header */}
     <Box as="section" mb={[6]} mt={[8]}>
       <Container maxWidth={[5]} px={[0]}>
         <Flex alignItems="center" justifyContent="space-between">
@@ -42,17 +51,27 @@ const IndexPage = ({data}) => (
             <Img fluid={data.portrait.childImageSharp.fluid}/>
           </Box>
         </Flex>
-        <Flex>
+        {/* End Header */}
+        {/* Start Resume & Sidebar */}
+        <Flex my={[8]}>
           <Box width='75%'>
-            <ResumeItem content={content}/>
+            {ResumeExperience.map(
+              (experience) =>
+                <ResumeItem content={experience}/>
+            )}
           </Box>
-          <Box width='25%'>
-
+          <Box borderLeft="skills" width='25%'>
+            <ul>
+              {marketingSkills}
+            </ul>
+            <ul>
+                {developmentSkills}
+            </ul>
           </Box>
-
         </Flex>
+        {/* End Resume & Sidebar */}
       {/*Start Bio*/}
-        <Box m="auto" maxWidth={[2]} as="section" my={[7]}>
+        <Box m="auto" maxWidth={[2]} as="section" my={[8]}>
           <Heading as="h2" variant="600">
             Bio
           </Heading>
