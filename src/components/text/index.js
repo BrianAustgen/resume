@@ -23,7 +23,7 @@ const Text = styled(Box)`
 `
 
 Text.defaultProps = {
-  mt: '7',
+  mt: '5',
   color: 'N50',
   fontSize: ['2', '3']
 }

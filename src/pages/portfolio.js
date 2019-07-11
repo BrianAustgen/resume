@@ -16,7 +16,7 @@ const Portfolio = ({data}) => (
   <Layout>
     <SEO title="Portfolio"/>
     {/*Start Portfolio Introduction*/}
-    <Box as="section" maxWidth={[2]} mx="auto" mb={[6]} mt={[8]}>
+    <Box as="section" maxWidth={[4]} mx="auto" mb={[6]} mt={[8]}>
       <Container>
         <Heading as="h1" variant="700">
           Portfolio

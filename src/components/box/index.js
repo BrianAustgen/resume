@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {
+  compose,
   space,
   width,
   color,
@@ -7,24 +8,28 @@ import {
   textAlign,
   boxShadow,
   borderRadius,
+  layout,
   display,
   zIndex,
-  maxWidth,
-  minHeight
+  minHeight,
+  background
 } from 'styled-system'
 
-const Box = styled.div`
-  ${space}
-  ${width}
-  ${color}
-  ${borders}
-  ${textAlign}
-  ${boxShadow}
-  ${borderRadius}
-  ${display}
-  ${zIndex}
-  ${maxWidth}
-  ${minHeight}
-`
+const Box = styled('div')(
+  compose(
+    layout,
+    background,
+    space,
+    width,
+    color,
+    borders,
+    textAlign,
+    boxShadow,
+    borderRadius,
+    display,
+    zIndex,
+    minHeight,
+  )
+)
 
 export default Box

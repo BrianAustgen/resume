@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link as GatsbyLink } from 'gatsby'
-import { maxWidth } from 'styled-system'
+import { layout, space } from 'styled-system'
 
 const StyledButton = styled.a`
   /* Adapt the colors based on primary prop */
   background: ${props => props.primary ? props.theme.colors.LB : "white"};
   color: ${props => props.primary ? "white" : props.theme.colors.LB };
-
+  display: inline-block;
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
@@ -16,7 +16,8 @@ const StyledButton = styled.a`
   font-weight: ${props => props.theme.fontWeights[1]}
   text-decoration: none;
   text-align: center;
-  ${maxWidth}
+  ${layout}
+  ${space}
 `;
 
 const Button = ({ children, to, ...props }) => {

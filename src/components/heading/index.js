@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { variant } from 'styled-system'
+import { variant, space } from 'styled-system'
 import Text from '../text'
 
 const headingStyle = variant({
@@ -8,6 +8,7 @@ const headingStyle = variant({
 
 const Heading = styled(Text)`
   ${headingStyle}
+  ${space}
   line-height: ${props => props.theme.lineHeight[1]};
 `
 

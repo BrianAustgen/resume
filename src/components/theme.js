@@ -9,11 +9,15 @@ const breakpoints = [
 
 const mediaQueries = breakpoints.map(createMediaQuery)
 
-const maxWidths = [
-  '40em',
-  '52em',
-  '64em',
-  '100em'
+
+const sizes = [
+  '24rem',
+  '32rem',
+  '40rem',
+  '56rem',
+  '64rem',
+  '80rem',
+  '100rem',
 ]
 
 const minHeights = [
@@ -245,6 +249,13 @@ const headings = {
   }
 }
 
+headings.company = {
+  fontSize: `${fontSizes[2]}`,
+  fontWeight: 300,
+  letterSpacing: letterSpacing.tight,
+  textTransform: 'uppercase',
+}
+
 const buttons = {
   appearance: {
     primary: {
@@ -294,7 +305,7 @@ const buttons = {
 const theme = {
   breakpoints,
   mediaQueries,
-  maxWidths,
+  sizes,
   space,
   fonts,
   fontSizes,

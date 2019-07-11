@@ -9,7 +9,7 @@ const Container = styled(Box)`
 `
 
 Container.defaultProps = {
-  maxWidth: '3',
+  maxWidth: '6',
   px: ['4%', 7]
 }
 

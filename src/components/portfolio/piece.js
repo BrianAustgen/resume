@@ -11,7 +11,7 @@ import Flex from "../flex"
 
 const Piece = ({content, data}) => (
 
-  <Box borderLeft="3" m="auto" maxWidth={[2]} as="section" my={[7]}>
+  <Box borderLeft="3" m="auto" maxWidth={[4]} as="section" my={[7]}>
     <Container>
       <Flex alignItems="center" justifyContent="space-between">
         <Box>
