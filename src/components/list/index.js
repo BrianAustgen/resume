@@ -1,14 +1,20 @@
-import styled from 'styled-components'
+import React from "react"
+
+import ListItem from './item'
+import Text from '../text'
 import Box from '../box'
 
-const List = styled(Box)`
-  display: inline-block;
-`
 
-List.defaultProps = {
-  as: 'li',
-  px: 1
-}
+const List = (props) => (
+  <Box pl={[6]}>
+    {props.content.map(
+      (skill) =>
+      <ListItem>
+        &bull; {skill}
+      </ListItem>
+    )}
+  </Box>
+)
 
 
 export default List

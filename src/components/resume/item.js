@@ -6,13 +6,13 @@ import Container from '../container'
 import Text from '../text'
 import Button from '../button.js'
 import Flex from '../flex'
-import List from '../list'
+import ListItem from '../list/item'
 
 
 const Item = ({content}) => (
 
 <Box py={[4]}>
-  <Heading as='h3' variant='500'>
+  <Heading as='h3' variant='400'>
     {content.title}
   </Heading>
   <Heading as='h4' variant='company'>
@@ -27,9 +27,9 @@ const Item = ({content}) => (
   <ul>
     {content.bulletPoints.map(
       (point) =>
-      <List>
+      <ListItem>
         &bull; {point}
-      </List>
+      </ListItem>
     )}
   </ul>
 </Box>

@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => {
             <Box>
               <Logo pr={[7]} to="/">Brian Austgen</Logo>
               <NavLink fontWeight="1" to="/portfolio/">Portfolio</NavLink>
-            </Box>``
+            </Box>
             <Box>
             </Box>
               <NavLink href="mailto:brianaustgen@gmail.com" fontWeight="0">

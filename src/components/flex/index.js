@@ -12,7 +12,8 @@ import {
   flex,
   justifySelf,
   alignSelf,
-  order
+  order,
+  size
 } from 'styled-system'
 
 import Box from '../box'
@@ -32,6 +33,7 @@ const Flex = styled(Box)`
   ${justifySelf}
   ${alignSelf}
   ${order}
+  ${size}
 `
 
 export default Flex

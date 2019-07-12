@@ -6,7 +6,8 @@ import {
   fontWeight,
   fontStyle,
   letterSpacing,
-  space
+  space,
+  textStyle
 } from 'styled-system'
 
 import Box from '../box'
@@ -20,6 +21,7 @@ const Text = styled(Box)`
   ${fontStyle}
   ${letterSpacing}
   ${space}
+  ${textStyle}
 `
 
 Text.defaultProps = {

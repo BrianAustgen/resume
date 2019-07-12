@@ -20,16 +20,16 @@ const sizes = [
   '100rem',
 ]
 
-const minHeights = [
-  '0px',
-  '8px',
-  '16px',
-  '32px',
-  '64px',
-  '128px',
-  '256px',
-  '512px',
-]
+// const minHeights = [
+//   '0px',
+//   '8px',
+//   '16px',
+//   '32px',
+//   '64px',
+//   '128px',
+//   '256px',
+//   '512px',
+// ]
 
 const space = [
     0,
@@ -258,6 +258,18 @@ headings.company = {
   textTransform: 'uppercase',
 }
 
+const textStyles = {
+  vertical: {
+    color: colors.LB,
+    transform: 'rotate(270deg)',
+    transformOrigin: 'left top 0',
+    textTransform: 'uppercase',
+    position: 'absolute',
+    textAlign: 'center',
+    top: '65%',
+  },
+}
+
 const buttons = {
   appearance: {
     primary: {
@@ -323,7 +335,7 @@ const theme = {
   headings,
   buttons,
   fontWeights,
-  minHeights
+  textStyles,
 }
 
 export default theme

@@ -11,7 +11,7 @@ import {
   layout,
   display,
   zIndex,
-  minHeight,
+  size,
   background
 } from 'styled-system'
 
@@ -28,7 +28,7 @@ const Box = styled('div')(
     borderRadius,
     display,
     zIndex,
-    minHeight,
+    size,
   )
 )
 
