@@ -124,7 +124,7 @@ const colors = {
 
   // Blues
   LB: '#3E92CC',
-  NB: '#183E59',
+  NB: '#14486D',
   DB: '#050F16',
   // Lights
   OW: '#EAF2F7',

@@ -24,24 +24,30 @@ const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" keywords={[`Brian Austgen`, `portfolio`, `resume`]} />
     {/* Start Header */}
-    <Box as="section" mb={[6]} mt={[8]} mx={[6]}>
-      <Container maxWidth={[4]} px={[0]}>
-        <Flex alignItems="center" justifyContent="space-between">
-          <Box maxWidth={[0]} width='70%' >
-            <Heading as="h5" pl='4px' variant="3001">
-              MARKETER & WEB DEVELOPER
-            </Heading>
-            <Heading as="h1" variant="800">
-              BRIAN AUSTGEN
-            </Heading>
-            <Button to='/portfolio' mx={0} mt={[6]}>
-              View Portfolio
-            </Button>
-          </Box>
-          <Box width="30%">
-            <Img fluid={data.portrait.childImageSharp.fluid}/>
-          </Box>
-        </Flex>
+    <Box as="section" pt={[8]} bg='OW' pb={[7]}>
+      <Container maxWidth={[4]} px={[0]} mx={[6]} >
+        <Box>
+          <Flex alignItems="center" justifyContent="space-between" bg=''>
+            <Box maxWidth={[0]} width='70%' >
+              <Heading as="h5" pl='4px' variant="3001">
+                MARKETER & WEB DEVELOPER
+              </Heading>
+              <Heading color='DB' as="h1" variant="800">
+                BRIAN AUSTGEN
+              </Heading>
+              <Button to='/portfolio' mx={0} mt={[6]}>
+                View Portfolio
+              </Button>
+            </Box>
+            <Box width="30%">
+              <Img fluid={data.portrait.childImageSharp.fluid}/>
+            </Box>
+          </Flex>
+        </Box>
+      </Container>
+    </Box>
+    <Box as="section" mb={[6]} mt={[7]} mx={[6]}>
+      <Container maxWidth={[4]} px={[0]} >
         {/* End Header */}
         {/* Start Resume & Sidebar */}
         <Flex my={[8]} flexDirection={['column','row']}>
@@ -50,7 +56,7 @@ const IndexPage = ({data}) => (
               {/*Start Bio*/}
               <Box maxWidth={[3]} pb={5}>
                 <Heading as="h2" variant="600">
-                  Bio
+                  Hello there,
                 </Heading>
                 <Text as="p">
                   Over the last 8 years, I’ve combined marketing automation, data science, web development, and traditional marketing techniques to create high-performing digital marketing campaigns.

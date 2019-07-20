@@ -10,9 +10,9 @@ import Position from "./position"
 
 const Header = ({ siteTitle }) => {
   return (
-    <Position position={'fixed'} top={'0'} width={'100%'} zIndex={'9'}>
+    <Position bg={'N0'} position={'fixed'} top={'0'} width={'100%'} zIndex={'9'}>
       <Box borderBottom={"1px solid #D4D8DB"}>
-        <Container bg={'N0'} py={[5]} >
+        <Container  py={[5]} >
           <Flex alignItems="center" justifyContent="space-between">
             <Box>
               <Logo pr={[7]} to="/">Brian Austgen</Logo>
