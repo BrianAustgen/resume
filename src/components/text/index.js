@@ -26,7 +26,7 @@ const Text = styled(Box)`
 
 Text.defaultProps = {
   mt: '5',
-  color: 'N50',
+  color: 'N80',
   fontSize: ['2', '3']
 }
 

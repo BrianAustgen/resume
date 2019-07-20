@@ -45,6 +45,8 @@ const space = [
     512
 ]
 
+space.bio = 96;
+
 const fonts = {
   sans: `'Barlow',
          -apple-system, BlinkMacSystemFont,

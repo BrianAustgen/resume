@@ -25,16 +25,16 @@ const IndexPage = ({data}) => (
     <SEO title="Home" keywords={[`Brian Austgen`, `portfolio`, `resume`]} />
     {/* Start Header */}
     <Box as="section" mb={[6]} mt={[8]} mx={[6]}>
-      <Container maxWidth={[5]} px={[0]}>
+      <Container maxWidth={[4]} px={[0]}>
         <Flex alignItems="center" justifyContent="space-between">
           <Box maxWidth={[0]} width='70%' >
             <Heading as="h5" pl='4px' variant="3001">
               MARKETER & WEB DEVELOPER
             </Heading>
-            <Heading as="h1" variant="700">
+            <Heading as="h1" variant="800">
               BRIAN AUSTGEN
             </Heading>
-            <Button mt={[6]}>
+            <Button to='/portfolio' mx={0} mt={[6]}>
               View Portfolio
             </Button>
           </Box>
@@ -45,39 +45,41 @@ const IndexPage = ({data}) => (
         {/* End Header */}
         {/* Start Resume & Sidebar */}
         <Flex my={[8]} flexDirection={['column','row']}>
-          <Flex width={['100%','70%','70%']} order={['2','2','1']}>
-            <Box>
+          <Flex width={['100%','70%','70%']} order={['1','1','1']}>
+            <Box pr={['0', 'bio']}>
               {/*Start Bio*/}
-                <Box maxWidth={[3]} pr={[5]}>
-                  <Heading as="h2" variant="600">
-                    Bio
-                  </Heading>
-                  <Text as="p">
-                    Over the last 8 years, I’ve combined marketing automation, data science, web development, and traditional marketing techniques to create high-performing digital marketing campaigns.
-                  </Text>
-                  <Text as="p">
-                    Working in a startup allowed me to rapidly gain a broad knowledge of digital marketing. As part of a tiny team, I was constantly increasing my abilities in everything from conversions to copywriting to coding.
-                  </Text>
-                  <Text as="p">
-                    Outside of work, I’m a competitive board game player and amateur dog walker. I also enjoy a good hike and the World Series.
-                  </Text>
-                  <Text as="p">
-                    If you’re looking to integrate the latest technology into your marketing mix, I’d love to hear from you.
-                  </Text>
-                </Box>
-                {/*End Bio*/}
-              <Heading as='h2' variant='500'>
-                Experience
-              </Heading>
-              {ResumeExperience.map(
-                (experience) =>
-                <ResumeItem content={experience}/>
-              )}
+              <Box maxWidth={[3]} pb={5}>
+                <Heading as="h2" variant="600">
+                  Bio
+                </Heading>
+                <Text as="p">
+                  Over the last 8 years, I’ve combined marketing automation, data science, web development, and traditional marketing techniques to create high-performing digital marketing campaigns.
+                </Text>
+                <Text as="p">
+                  Working in a startup allowed me to rapidly gain a broad knowledge of digital marketing. As part of a tiny team, I was constantly increasing my abilities in everything from conversions to copywriting to coding.
+                </Text>
+                <Text as="p">
+                  Outside of work, I’m a competitive board game player and amateur dog walker. I also enjoy a good hike and the World Series.
+                </Text>
+                <Text as="p">
+                  If you’re looking to integrate the latest technology into your marketing mix, I’d love to hear from you.
+                </Text>
+              </Box>
+              {/*End Bio*/}
+              <Box py={5}>
+                <Heading as='h2' variant='600'>
+                  Experience
+                </Heading>
+                {ResumeExperience.map(
+                  (experience) =>
+                  <ResumeItem content={experience}/>
+                )}
+              </Box>
             </Box>
           </Flex>
-          <Flex borderLeft="skills" width={['100%','30%','30%']} order={['1','1','2']}>
+          <Flex borderLeft="skills" width={['100%','30%','30%']} order={['2','2','2']}>
             <Box>
-              <Heading as='h2' variant="500" textAlign="center">
+              <Heading pb='5' as='h2' variant="600" textAlign="center">
                 Skills
               </Heading>
               <Flex position="relative" alignItems="center" justifyContent="space-between" minHeight="200px">
