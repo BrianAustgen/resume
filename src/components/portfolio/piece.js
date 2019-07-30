@@ -53,7 +53,6 @@ const Piece = ({content, data}) => (
         <Text px={[2]} as="p">
           {content.description}
         </Text>
-        {/*TODO add href for button*/}
         <Button maxWidth="40%" as="a" href={content.link} target="_blank">
           {content.cta}
         </Button>

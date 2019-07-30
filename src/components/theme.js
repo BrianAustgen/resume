@@ -142,7 +142,13 @@ const borders = [
   `3px solid ${colors.LB}`,
   `3px solid ${colors.NB}`
 ]
+
 borders.skills = `2px solid ${colors.LB}`
+
+borders.random = [
+  `3px solid ${colors.LB}`,
+  `3px solid ${colors.NB}`
+]
 
 // box shadows
 const shadows = [
