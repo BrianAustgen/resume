@@ -7,7 +7,10 @@ const ListItem = styled(Box)`
 
 ListItem.defaultProps = {
   as: 'li',
-  px: 1
+  pr: 4,
+  py: 1,
+  fontSize: '2',
+  fontWeight: '1',
 }
 
 

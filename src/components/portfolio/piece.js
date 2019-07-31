@@ -9,9 +9,15 @@ import Text from "../text"
 import Button from "../button.js"
 import Flex from "../flex"
 
+const randomBorder = () => {
+  let number = Math.floor(Math.random() * Math.floor(2))
+  let border = `random.${number}`
+  return (border)
+}
+
 const Piece = ({content, data}) => (
 
-  <Box borderLeft="3" m="auto" maxWidth={[4]} as="section" my={[7]}>
+  <Box bg="N0" borderLeft={randomBorder()} m="auto" maxWidth={[4]} as="section" my={[7]} py={[6]}>
     <Container>
       <Flex alignItems="center" justifyContent="space-between">
         <Box>
@@ -30,19 +36,19 @@ const Piece = ({content, data}) => (
       </Box>
       <Flex alignItems="center" justifyContent="space-between" pt={6}>
         <Flex order={['1','1','2']} width="50%" flexDirection="column" flexWrap="wrap" borderLeft="1" pl={4}>
-          <Heading as="h5" color="LB" variant='5001' mt={4}>
+          <Heading as="h5" color="DB" variant='400' mt={4}>
             Goal:
           </Heading>
           <Text mt={0} fontSize={2} as="p">
             {content.goal}
           </Text>
-          <Heading as="h5" color="LB" variant='5001' mt={4}>
+          <Heading as="h5" color="DB" variant='400' mt={4}>
             Solution:
           </Heading>
           <Text mt={0} fontSize={2} as="p">
             {content.solution}
           </Text>
-          <Heading as="h5" color="LB" variant='5001' mt={4}>
+          <Heading as="h5" color="DB" variant='400' mt={4}>
             Results:
           </Heading>
           <Text mt={0} fontSize={2} as="p">

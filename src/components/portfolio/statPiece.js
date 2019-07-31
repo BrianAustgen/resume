@@ -14,11 +14,10 @@ const randomBorder = () => {
   let border = `random.${number}`
   return (border)
 }
-console.log(randomBorder())
 
 const LeftParagraphPiece = ({content, data}) => (
 
-  <Box borderLeft={randomBorder()} m="auto" maxWidth={[4]} as="section" my={[7]}>
+  <Box borderLeft={randomBorder()} m="auto" maxWidth={[4]} as="section" bg="N0" my={[7]} py={[6]}>
     <Container>
       <Box>
         <Flex alignItems="center" justifyContent="space-between">

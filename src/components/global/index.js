@@ -16,6 +16,10 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: ${props => props.theme.letterSpacing.normal};
     font-weight: ${props => props.theme.fontWeights[0]}
   }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 
 `
 

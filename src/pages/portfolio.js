@@ -10,7 +10,7 @@ import Text from "../components/text"
 import Button from "../components/button"
 import Flex from "../components/flex"
 import Piece from '../components/portfolio/piece'
-import LeftParagraphPiece from '../components/portfolio/leftParagraph'
+import StatPiece from '../components/portfolio/statPiece'
 import portfolioPieces from '../content/portfolio'
 
 
@@ -24,7 +24,7 @@ function PortfolioJsx(){
           )
         } else {
           return(
-            <LeftParagraphPiece key={piece.headline} content={piece}/>
+            <StatPiece key={piece.headline} content={piece}/>
           )
         }
       }
@@ -36,16 +36,18 @@ const Portfolio = ({data}) => (
   <Layout>
     <SEO title="Portfolio"/>
     {/*Start Portfolio Introduction*/}
-    <Box as="section" maxWidth={[4]} mx="auto" mb={[6]} mt={[8]}>
-      <Container>
-        <Heading as="h1" variant="700">
-          Portfolio
-        </Heading>
-      </Container>
+    <Box bg="WBG" pb={[6]} pt={[8]}>
+      <Box as="section" maxWidth={[4]} mx="auto">
+        <Container>
+          <Heading as="h1" variant="700">
+            Portfolio
+          </Heading>
+        </Container>
+      </Box>
+      {/*End Portfolio Introduction*/}
+      {/* Render Portfolio Pieces */}
+      <PortfolioJsx/>
     </Box>
-    {/*End Portfolio Introduction*/}
-    <PortfolioJsx/>
-
   </Layout>
 )
 

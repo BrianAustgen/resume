@@ -12,17 +12,20 @@ const Header = ({ siteTitle }) => {
   return (
     <Position bg={'N0'} position={'fixed'} top={'0'} width={'100%'} zIndex={'9'}>
       <Box borderBottom={"1px solid #D4D8DB"}>
-        <Container  py={[5]} >
+        <Container px='0' maxWidth='4' py={[5]} >
           <Flex alignItems="center" justifyContent="space-between">
-            <Box>
+            <Flex alignItems="center">
               <Logo pr={[7]} to="/">Brian Austgen</Logo>
-              <NavLink fontWeight="1" to="/portfolio/">Portfolio</NavLink>
-            </Box>
-            <Box>
-            </Box>
+              <NavLink color='DB' fontSize='1' fontWeight="1" to="/portfolio/">Portfolio</NavLink>
+              <NavLink color='DB' fontSize='1' fontWeight="1" pl='6' to="/portfolio/">About</NavLink>
+              <NavLink color='DB' fontSize='1' fontWeight="1" pl='6' to="/portfolio/">Contact</NavLink>
+              <NavLink color='DB' fontSize='1' fontWeight="1" pl='6' to="/portfolio/">Blog</NavLink>
+            </Flex>
+            <Flex alignItems="center">
               <NavLink href="mailto:brianaustgen@gmail.com" fontWeight="0">
-              brianaustgen@gmail.com
+                brianaustgen@gmail.com
               </NavLink>
+            </Flex>
           </Flex>
         </Container>
       </Box>

@@ -129,7 +129,8 @@ const colors = {
   // Lights
   OW: '#EAF2F7',
   DW: '#D4D8DB',
-  FG: '#d8d8d8'
+  FG: '#d8d8d8',
+  WBG: '#F7F7F7'
 }
 
 colors.inherit = 'inherit';

@@ -11,7 +11,7 @@ import ListItem from '../list/item'
 
 const Item = ({content}) => (
 
-<Box py={[4]}>
+<Box py={[6]}>
   <Heading as='h3' variant='400'>
     {content.title}
   </Heading>
@@ -21,7 +21,7 @@ const Item = ({content}) => (
   <Heading as='h5' variant='3001'>
     {content.dates}
   </Heading>
-  <Text>
+  <Text pb='1'>
     {content.summary}
   </Text>
   <ul>

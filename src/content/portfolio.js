@@ -1,7 +1,7 @@
 const portfolioPieces = [
   {
     headline: 'Unlimited Summer',
-    date: '(03/2019 - 04/2019)',
+    date: '03/2019 - 04/2019',
     goal: 'Increase off-season lead gen',
     solution: 'Promotion for extra free content for the summer for new customers in March and April.',
     results: 'Increased lead generation by over 62% and revenue by 41% year over year.',
@@ -9,18 +9,6 @@ const portfolioPieces = [
     description: 'I developed this campaign to create more interest in the off-season and maintain a high average sale price. We were able to accomplish both.',
     link: 'https://getunbound.org',
     cta: 'View Landing Page',
-    style:''
-  },
-  {
-    headline: 'Opportunity Cost of College',
-    date: '(02/2017)',
-    goal: 'Increase brand awareness',
-    solution: 'Animated video content',
-    results: 'Generated over a quarter million views and 2,500 engaged leads. As of writing this (6/30/2019), the video still ranks #1 for “Opportunity Cost of College” video search on Google and Bing.',
-    image: 'opportunityCost',
-    description: 'In 2017, we had the idea to create an animated video based off of an infographic I had created a couple years prior. This turned into one of our most successful video projects after it went “viral” on Facebook by generating some major discussion and a lot of shares.',
-    link: 'https://www.youtube.com/watch?v=nN55-2f-I4s&pbjreload=10',
-    cta: 'Watch Video',
     style:''
   },
   {
@@ -41,6 +29,19 @@ const portfolioPieces = [
     cta: 'Watch Video',
     style: 'left-paragraph',
   },
+  {
+    headline: 'Opportunity Cost of College',
+    date: '02/2017',
+    goal: 'Increase brand awareness',
+    solution: 'Animated video content',
+    results: 'Generated +250,000 views and 2,500 engaged leads. As of writing this (6/30/2019), the video still ranks #1 for “Opportunity Cost of College” video search on Google and Bing.',
+    image: 'opportunityCost',
+    description: 'With the help of an animator, I created a video examining the opportunity cost of college. This turned into one of my most successful video projects after it went “viral” on Facebook by generating some major discussion and thousands of shares.',
+    link: 'https://www.youtube.com/watch?v=nN55-2f-I4s&pbjreload=10',
+    cta: 'Watch Video',
+    style:''
+  },
+
 ]
 
 

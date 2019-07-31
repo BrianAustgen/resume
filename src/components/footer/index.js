@@ -10,7 +10,7 @@ import NavLink from '../navlink'
 
 
 const Footer = ({data}) => (
-  <Box as="footer" m='auto' minHeight={7} backgroundColor="NB" mt={7} mb={0}>
+  <Box as="footer" m='auto' minHeight={7} backgroundColor="NB" mb={0}>
     <Box as="section" maxWidth={1} m='auto'>
       <Heading color={'N0'} textAlign='center' as="h1" variant='7001' py={7}>
         Contact
